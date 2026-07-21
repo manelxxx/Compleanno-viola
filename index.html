@@ -1,394 +1,196 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Tanti auguri, Viola</title>
-
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      background: #f7f5f2;
-      color: #222;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .page {
-      width: 100%;
-      max-width: 820px;
-      margin: 0 auto;
-      padding: 60px 22px 100px;
-      animation: appear 1s ease;
-    }
-
-    .intro-section {
-      margin-bottom: 75px;
-      text-align: center;
-    }
-
-    h1 {
-      margin-bottom: 28px;
-      font-size: clamp(40px, 9vw, 64px);
-      font-weight: 500;
-      letter-spacing: -1.5px;
-    }
-
-    .intro-text {
-      max-width: 700px;
-      margin: 0 auto;
-      color: #555;
-      font-size: clamp(17px, 4vw, 20px);
-      line-height: 1.9;
-    }
-
-    .main-title {
-      margin-bottom: 18px;
-      text-align: center;
-      font-size: clamp(32px, 7vw, 46px);
-      font-weight: 500;
-      letter-spacing: -1px;
-    }
-
-    .main-description {
-      max-width: 670px;
-      margin: 0 auto 80px;
-      text-align: center;
-      color: #666;
-      font-size: 18px;
-      line-height: 1.8;
-    }
-
-    .step {
-      margin-bottom: 95px;
-    }
-
-    .step-heading {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 28px;
-      text-align: center;
-    }
-
-    .step-number {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      width: 54px;
-      height: 54px;
-      margin-bottom: 18px;
-
-      border-radius: 50%;
-      background: #4f7658;
-      color: #fff;
-
-      font-size: 22px;
-      font-weight: 600;
-
-      box-shadow: 0 9px 22px rgba(79, 118, 88, 0.22);
-    }
-
-    .step-label {
-      margin-bottom: 9px;
-      color: #4f7658;
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
-
-    .step h2 {
-      margin-bottom: 14px;
-      font-size: clamp(27px, 6vw, 37px);
-      font-weight: 500;
-      line-height: 1.2;
-      letter-spacing: -0.5px;
-    }
-
-    .step-text {
-      max-width: 660px;
-      margin: 0 auto;
-      color: #555;
-      font-size: 18px;
-      line-height: 1.8;
-    }
-
-    .video-container {
-      position: relative;
-      width: 100%;
-      padding-bottom: 56.25%;
-      overflow: hidden;
-
-      background: #111;
-      border-radius: 18px;
-      box-shadow: 0 20px 48px rgba(0, 0, 0, 0.12);
-    }
-
-    .video-container iframe {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
-
-    .divider {
-      width: 1px;
-      height: 45px;
-      margin: -55px auto 45px;
-      background: rgba(79, 118, 88, 0.3);
-    }
-
-    .final-message {
-      padding-top: 10px;
-      text-align: center;
-    }
-
-    .final-message p {
-      color: #555;
-      font-size: 20px;
-      line-height: 1.9;
-    }
-
-    .final-name {
-      display: block;
-      margin-top: 18px;
-      color: #222;
-      font-size: 34px;
-      font-weight: 500;
-    }
-
-    @keyframes appear {
-      from {
-        opacity: 0;
-        transform: translateY(18px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @media (max-width: 600px) {
-      .page {
-        padding: 42px 16px 75px;
-      }
-
-      .intro-section {
-        margin-bottom: 60px;
-      }
-
-      .main-description {
-        margin-bottom: 65px;
-        font-size: 17px;
-      }
-
-      .step {
-        margin-bottom: 78px;
-      }
-
-      .step-number {
-        width: 50px;
-        height: 50px;
-        font-size: 20px;
-      }
-
-      .step-text {
-        font-size: 17px;
-        line-height: 1.75;
-      }
-
-      .video-container {
-        border-radius: 14px;
-      }
-
-      .divider {
-        margin-top: -42px;
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-  <main class="page">
-
-    <section class="intro-section">
-
-      <h1>Tanti auguri.</h1>
-
-      <p class="intro-text">
-        Credo che uno dei doni più importanti sia la conoscenza:
-        quella che ci rende più consapevoli, più sereni e più vicini
-        alla felicità.
-
-        <br><br>
-
-        È questo che vorrei provare a donarti.
-      </p>
-
-    </section>
-
-    <section>
-
-      <h2 class="main-title">Ti ricordo chi sei.</h2>
-
-      <p class="main-description">
-        Nei periodi di confusione può capitare di dimenticare alcune parti
-        di noi. Queste sono le parti di te che ho conosciuto e che meritano
-        di essere ricordate.
-      </p>
-
-      <!-- STEP 1 -->
-
-      <article class="step">
-
-        <div class="step-heading">
-
-          <div class="step-number">1</div>
-
-          <span class="step-label">Step 1</span>
-
-          <h2>La Viola che ama le persone.</h2>
-
-          <p class="step-text">
-            Hai lasciato in chi ti conosce un gesto, una parola
-            o un piccolo pezzo della tua anima.
-          </p>
-
-        </div>
-
-      </article>
-
-
-      <!-- STEP 2 -->
-
-      <article class="step">
-
-        <div class="step-heading">
-
-          <div class="step-number">2</div>
-
-          <span class="step-label">Step 2</span>
-
-          <h2>La Viola resiliente.</h2>
-
-          <p class="step-text">
-            Affronti le difficoltà con coraggio, intelligenza
-            e quella testardaggine che ti permette di non arrenderti.
-          </p>
-
-        </div>
-
-      </article>
-
-      <!-- STEP 3 -->
-
-      <article class="step">
-
-        <div class="step-heading">
-
-          <div class="step-number">3</div>
-
-          <span class="step-label">Step 3</span>
-
-          <h2>La Viola bambina.</h2>
-
-          <p class="step-text">
-            Quella che desidera essere amata, coccolata e protetta,
-            perché di amore ne meriti davvero tanto.
-          </p>
-
-        </div>
-
-      </article>
-
-
-      <!-- STEP 4 -->
-
-      <article class="step">
-
-        <div class="step-heading">
-
-          <div class="step-number">4</div>
-
-          <span class="step-label">Step 4</span>
-
-          <h2>La Viola che ama l'arte.</h2>
-
-          <p class="step-text">
-            L'arte nutre la tua anima e dà voce alla sensibilità
-            con cui osservi il mondo.
-          </p>
-
-        </div>
-
-      </article>
-
-<section style="margin-top:80px;">
-
-  <h2 class="main-title">
-    Un ultimo pensiero.
-  </h2>
-
-  <p class="main-description">
-    Tutto quello che non sono riuscito a scrivere...
-    ho provato a dirtelo qui.
-  </p>
-
-
-<div class="video-container" style="margin-bottom:70px;">
-
-  <iframe
-    src="https://www.youtube.com/embed/VIDEO_ID"
-    title="Video di auguri"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen>
-  </iframe>
-
-</div>
-
-
-</section>
-
-<section class="final-message">
-
-  <p>
-
-    Non so dove la vita ti porterà.
-
-    <br><br>
-
-    So soltanto che, qualunque strada sceglierai,
-    spero che tu non perda mai queste parti di te.
-
-    <br><br>
-
-    Perché sono quelle che ti rendono semplicemente...
-
-    <span class="final-name">
-      Viola.
-    </span>
-
-  </p>
-
-</section>
-
-    </section>
-
-  </main>
-
-</body>
-</html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tanti auguri, Viola</title>
+
+<style>
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#f7f5f2;
+color:#222;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+.page{
+width:100%;
+max-width:820px;
+margin:0 auto;
+padding:60px 22px 100px;
+animation:appear 1s ease;
+}
+
+.intro-section{
+margin-bottom:75px;
+text-align:center;
+}
+
+h1{
+margin-bottom:28px;
+font-size:clamp(40px,9vw,64px);
+font-weight:500;
+letter-spacing:-1.5px;
+}
+
+.intro-text{
+max-width:700px;
+margin:0 auto;
+color:#555;
+font-size:clamp(17px,4vw,20px);
+line-height:1.9;
+}
+
+.main-title{
+margin-bottom:18px;
+text-align:center;
+font-size:clamp(32px,7vw,46px);
+font-weight:500;
+letter-spacing:-1px;
+}
+
+.main-description{
+max-width:670px;
+margin:0 auto 80px;
+text-align:center;
+color:#666;
+font-size:18px;
+line-height:1.8;
+}
+
+.step{
+margin-bottom:95px;
+}
+
+.step-heading{
+display:flex;
+flex-direction:column;
+align-items:center;
+margin-bottom:28px;
+text-align:center;
+}
+
+.step-number{
+display:flex;
+align-items:center;
+justify-content:center;
+width:54px;
+height:54px;
+margin-bottom:18px;
+border-radius:50%;
+background:#4f7658;
+color:white;
+font-size:22px;
+font-weight:600;
+box-shadow:0 9px 22px rgba(79,118,88,.22);
+}
+
+.step-label{
+margin-bottom:9px;
+color:#4f7658;
+font-size:13px;
+font-weight:700;
+letter-spacing:2px;
+text-transform:uppercase;
+}
+
+.step h2{
+margin-bottom:14px;
+font-size:clamp(27px,6vw,37px);
+font-weight:500;
+line-height:1.2;
+}
+
+.step-text{
+max-width:660px;
+margin:0 auto 28px;
+color:#555;
+font-size:18px;
+line-height:1.8;
+}
+
+.step-photo{
+display:block;
+width:100%;
+max-width:680px;
+margin:0 auto;
+border-radius:18px;
+box-shadow:0 18px 40px rgba(0,0,0,.12);
+}
+
+.video-container{
+position:relative;
+width:100%;
+padding-bottom:56.25%;
+overflow:hidden;
+background:#111;
+border-radius:18px;
+box-shadow:0 20px 48px rgba(0,0,0,.12);
+}
+
+.video-container iframe{
+position:absolute;
+inset:0;
+width:100%;
+height:100%;
+border:0;
+}
+
+.final-message{
+padding-top:70px;
+text-align:center;
+}
+
+.final-message p{
+font-size:20px;
+line-height:1.9;
+color:#555;
+}
+
+.final-name{
+display:block;
+margin-top:18px;
+font-size:34px;
+color:#222;
+font-weight:500;
+}
+
+@keyframes appear{
+from{
+opacity:0;
+transform:translateY(18px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@media(max-width:600px){
+
+.page{
+padding:42px 16px 75px;
+}
+
+.step{
+margin-bottom:70px;
+}
+
+.step-photo{
+border-radius:14px;
+}
+
+}
+
+</style>
