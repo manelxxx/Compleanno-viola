@@ -52,6 +52,10 @@ font-size:clamp(17px,4vw,20px);
 line-height:1.9;
 }
 
+.intro-text p + p{
+margin-top:18px;
+}
+
 .main-title{
 margin-bottom:18px;
 text-align:center;
@@ -127,12 +131,43 @@ max-width:680px;
 margin:0 auto;
 border-radius:18px;
 box-shadow:0 18px 40px rgba(0,0,0,.12);
+transition:transform .4s ease, box-shadow .4s ease;
+}
+
+.step-photo:hover{
+transform:translateY(-4px);
+box-shadow:0 24px 50px rgba(0,0,0,.16);
+}
+
+.closing-section{
+margin-top:20px;
+margin-bottom:95px;
+text-align:center;
+}
+
+.video-title{
+margin-bottom:18px;
+text-align:center;
+font-size:clamp(28px,6vw,38px);
+font-weight:500;
+letter-spacing:-1px;
+}
+
+.video-text{
+max-width:600px;
+margin:0 auto 40px;
+text-align:center;
+color:#666;
+font-size:18px;
+line-height:1.8;
 }
 
 .video-container{
 position:relative;
 width:100%;
-padding-bottom:56.25%;
+max-width:680px;
+margin:0 auto;
+padding-bottom:38.25%;
 overflow:hidden;
 background:#111;
 border-radius:18px;
@@ -150,6 +185,7 @@ border:0;
 .final-message{
 padding-top:70px;
 text-align:center;
+border-top:1px solid rgba(0,0,0,.08);
 }
 
 .final-message p{
@@ -158,12 +194,17 @@ line-height:1.9;
 color:#555;
 }
 
+.final-message p + p{
+margin-top:12px;
+}
+
 .final-name{
 display:block;
-margin-top:18px;
+margin-top:22px;
 font-size:34px;
 color:#222;
 font-weight:500;
+letter-spacing:-.5px;
 }
 
 @keyframes appear{
@@ -191,6 +232,124 @@ margin-bottom:70px;
 border-radius:14px;
 }
 
+.video-container{
+padding-bottom:56.25%;
+border-radius:14px;
+}
+
 }
 
 </style>
+</head>
+<body>
+
+<div class="page">
+
+  <section class="intro-section">
+    <h1>Tanti auguri.</h1>
+    <div class="intro-text">
+      <p>Credo che uno dei doni più importanti sia la conoscenza: quella che ci rende più consapevoli, più sereni e più vicini alla felicità.</p>
+      <p>È questo che vorrei provare a donarti.</p>
+    </div>
+  </section>
+
+  <section class="intro-section">
+    <h2 class="main-title">Ti ricordo chi sei.</h2>
+    <p class="main-description">Nei periodi di confusione può capitare di dimenticare alcune parti di noi. Queste sono le parti di te che ho conosciuto e che meritano di essere ricordate.</p>
+  </section>
+
+  <div class="step">
+    <div class="step-heading">
+      <div class="step-number">1</div>
+      <div class="step-label">Step 1</div>
+      <h2>La Viola che ama le persone.</h2>
+    </div>
+    <p class="step-text">Hai lasciato in chi ti conosce un gesto, una parola o un piccolo pezzo della tua anima.</p>
+    <img class="step-photo" src="images/foto1.jpg" alt="La Viola che ama le persone">
+  </div>
+
+  <div class="step">
+    <div class="step-heading">
+      <div class="step-number">2</div>
+      <div class="step-label">Step 2</div>
+      <h2>La Viola resiliente.</h2>
+    </div>
+    <p class="step-text">Affronti le difficoltà con coraggio, intelligenza e quella testardaggine che ti permette di non arrenderti.</p>
+    <img class="step-photo" src="images/foto2.jpg" alt="La Viola resiliente">
+  </div>
+
+  <div class="step">
+    <div class="step-heading">
+      <div class="step-number">3</div>
+      <div class="step-label">Step 3</div>
+      <h2>La Viola bambina.</h2>
+    </div>
+    <p class="step-text">Quella che desidera essere amata, coccolata e protetta, perché di amore ne meriti davvero tanto.</p>
+    <img class="step-photo" src="images/foto3.jpg" alt="La Viola bambina">
+  </div>
+
+  <div class="step">
+    <div class="step-heading">
+      <div class="step-number">4</div>
+      <div class="step-label">Step 4</div>
+      <h2>La Viola che ama l'arte.</h2>
+    </div>
+    <p class="step-text">L'arte nutre la tua anima e dà voce alla sensibilità con cui osservi il mondo.</p>
+    <img class="step-photo" src="images/foto5.jpg" alt="La Viola che ama l'arte">
+  </div>
+
+  <div class="step">
+    <div class="step-heading">
+      <div class="step-number">5</div>
+      <div class="step-label">Step 5</div>
+      <h2>La Viola felice.</h2>
+    </div>
+    <p class="step-text">C'è un sorriso che appartiene solo a te, capace di illuminare una stanza intera e di rendere leggero anche il giorno più pesante. Quando sei felice lo sei fino in fondo, e chi ti sta vicino non può fare a meno di sorridere con te.</p>
+    <img class="step-photo" src="images/foto6.jpg" alt="La Viola felice">
+  </div>
+
+  <div class="step">
+    <div class="step-heading">
+      <div class="step-number">6</div>
+      <div class="step-label">Step 6</div>
+      <h2>La Viola spensierata.</h2>
+    </div>
+    <p class="step-text">Quella che balla senza un vero motivo, ride per una sciocchezza e trasforma i momenti più semplici in piccoli ricordi indimenticabili. La leggerezza con cui affronti la vita è un dono raro, e chi la vive al tuo fianco lo sa bene.</p>
+    <img class="step-photo" src="images/foto7.jpg" alt="La Viola spensierata">
+  </div>
+
+  <div class="step">
+    <div class="step-heading">
+      <div class="step-number">7</div>
+      <div class="step-label">Step 7</div>
+      <h2>La Viola che viaggia.</h2>
+    </div>
+    <p class="step-text">Curiosa di ogni luogo nuovo, capace di trasformare ogni viaggio in una collezione di volti, storie e piccole scoperte. Ogni valigia che fai porta con sé la voglia di conoscere il mondo e di lasciarti sorprendere da esso.</p>
+    <img class="step-photo" src="images/foto-ultima.jpg" alt="La Viola che viaggia">
+  </div>
+
+  <section class="closing-section">
+    <h2 class="main-title">E ci sono tanti altri pezzettini di te.</h2>
+    <p class="main-description">Ci sono tanti altri piccoli pezzi della tua anima che mi hai donato e che ho avuto la fortuna di conoscere.<br>
+    Spero che questi pezzettini rimangano sempre con te e continuino ad accompagnarti ovunque andrai.</p>
+  </section>
+
+  <section class="closing-section">
+    <h2 class="video-title">Un ultimo pensiero.</h2>
+    <p class="video-text">Tutto quello che non sono riuscito a scrivere... ho provato a dirtelo qui.</p>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/INSERISCI_ID_VIDEO" title="Un ultimo pensiero" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section class="final-message">
+    <p>Non so dove la vita ti porterà.</p>
+    <p>So soltanto che, qualunque strada sceglierai, spero che tu non perda mai queste parti di te.</p>
+    <p>Perché sono quelle che ti rendono semplicemente...</p>
+    <span class="final-name">Viola.</span>
+  </section>
+
+</div>
+
+</body>
+</html>
